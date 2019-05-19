@@ -6,7 +6,7 @@ direction = point_direction(x, y, mouse_x, mouse_y);
 if obj_player.speed = 0 {
 	direction = direction + random_range(-1, 1)
 } else {
-	direction = direction + random_range(-20, 20)
+	direction = direction + random_range(-30, 30)
 }
 speed = 20;
 image_angle = direction;

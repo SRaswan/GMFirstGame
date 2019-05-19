@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-cooldown = 0
 ammo = 6
-velocity = 7
+cooldown = 0
+maxammo = 6
+velocity = 6
 friction = 0.9

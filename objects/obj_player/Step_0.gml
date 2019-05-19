@@ -1,14 +1,15 @@
-///change velocity into universal not neg or pos later
-if (vspeed > 6) vspeed = 6
-if (hspeed > 6) hspeed = 6
+
+clamp(vspeed, 0, 6);
+clamp(hspeed, 0, 6);
 if keyboard_check(ord("W")) {
 	vspeed = -velocity
 	if keyboard_check(ord("S")) {
 		vspeed = 0
 	}
 }
+
 if keyboard_check(ord("S")) {
-	vspeed = velocity 
+	vspeed = velocity
 	if keyboard_check(ord("W")) {
 		vspeed = 0
 	}
@@ -30,6 +31,8 @@ if keyboard_check(ord("D")) {
 
 
 image_angle = point_direction(x, y, mouse_x, mouse_y);
+
+
 if ammo > 0 {
 	if mouse_check_button(mb_left) and cooldown < 1 {
 		instance_create_layer(x, y, "BulletsLayer", obj_revolverbullet);
@@ -37,8 +40,8 @@ if ammo > 0 {
 		cooldown = 15;
 	} 
 } else {
-	if keyboard_check(ord("R")) {
-		ammo = 6;
+	if (keyboard_check(ord("R")) or ammo = 0) {
+		ammo = maxammo;
 		cooldown = 70;
 	}
 }

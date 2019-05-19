@@ -14,7 +14,7 @@
             
         ]
     },
-    "out_columns": 4,
+    "out_columns": 3,
     "out_tilehborder": 2,
     "out_tilevborder": 2,
     "spriteId": "90dd3be7-ca7f-4afc-bf25-b6220a70d66c",
@@ -32,13 +32,7 @@
             6,
             7,
             8,
-            9,
-            10,
-            11,
-            12,
-            13,
-            14,
-            15
+            9
         ],
         "SerialiseFrameCount": 1
     },
@@ -46,11 +40,11 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 16,
-    "tileheight": 16,
+    "tile_count": 10,
+    "tileheight": 32,
     "tilehsep": 0,
     "tilevsep": 0,
-    "tilewidth": 16,
+    "tilewidth": 32,
     "tilexoff": 0,
     "tileyoff": 0
 }
